@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script type="module">
+import interact from 
+'https://cdn.interactjs.io/v1.10.2/interactjs/index.js'
+
+interact('.item').draggable({
+  listeners: {
+    move (event) {
+      console.log(event.pageX,
+                  event.pageY)
+    }
+  }
+})
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tank Test</title>
+<style type="text/css">
+</style>
+</head>
+	<body>
+		<div id="drag-1" class="draggable">
+		  <p> You can drag one element </p>
+		</div>
+		<div id="drag-2" class="draggable">
+		  <p> with each pointer </p>
+		</div>
+	</body>
+</html>
